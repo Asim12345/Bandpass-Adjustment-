@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Dec 15 14:29:18 2023
-
-@author: mas108
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Fri Dec 15 13:23:56 2023
 
 @author: muhammad.asim@uit.no/muhammad.asim.1214@gmail.com
@@ -41,16 +34,15 @@ R2_Test_All=[]
 
 # Excel File where OLI and MSi Rrs data are provided in columns
 
-excel_file= 'D:/US_Lakes/Excel_File_BA.xlsx'
+excel_file= '/Excel_File_BA.xlsx'
 file1 = pd.read_excel(excel_file,sheet_name='Sheet1')  
 
-
+# Bandpass Adjustment of MSI 443nm band. 
 OLI_Band = 'Rrs_443_L8_OC'
 MSI_Band=  'Rrs_443_S2_OC'
 
 #x_vals_train1 is an array containing OLI-derived Rrs pixels
 #y_vals_train1 is an array containing MSI-derived Rrs pixels
-
 x_vals_train1 = np.array(file1['MSI-Band'])   # input Feature (Rrs-MSI)
 y_vals_train1 = np.array(file1['OLI-Band'])   # Labels Rrs_OLI
 
