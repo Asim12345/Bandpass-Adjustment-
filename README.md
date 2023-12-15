@@ -1,4 +1,4 @@
-# Bandpass-Adjustment
+# Bandpass-Adjustment Model
 This repository contains source code for the following papers:
 
 A new spectral harmonization algorithm for landsat-8 and sentinel-2 remote sensing reflectance products using machine learning:
